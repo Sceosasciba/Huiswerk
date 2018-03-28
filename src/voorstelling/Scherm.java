@@ -79,7 +79,7 @@ public class Scherm extends JFrame implements ActionListener {
 
             if (e.getSource() == jbVerkoop) {
                 //handel verkoop-knop af
-                if (voorstelling.getAantalPlaatsen() <= 1) {
+                if (voorstelling.getAantalPlaatsen() <= 0) {
                     int verkoopKaartje = Integer.parseInt(jtVerkoop.getText());
                     voorstelling.verkoopKaartje(verkoopKaartje);
 
